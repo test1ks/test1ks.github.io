@@ -1,0 +1,206 @@
+.main_body
+    background-color: #171717
+    z-index: 1
+    height: 3900px
+.main_header
+    display: flex
+    position: fixed
+    top: 0
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 50px
+    margin-top: 20px
+    z-index: 1000
+    &_nav
+        width: 660px
+        height: 50px
+        background: rgba(56, 56, 56, 0.29)
+        border-radius: 16px
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+        backdrop-filter: blur(12.8px)
+        -webkit-backdrop-filter: blur(12.8px)
+        &_list
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 80%
+            height: 50px
+            margin: 0 auto
+            padding: 0px 10px 0px 10px
+            &_item
+                list-style: none
+                &_link
+                    color: #fff
+                    text-decoration: none
+                    font-size: 18px
+                    &:hover
+                        border-bottom: solid 1px #fff
+.about
+    display: flex
+    position: relative
+    width: 100%
+    height: 100vh
+    background: url("../img/about_/about_bg.png") center center/cover no-repeat
+    background-attachment: fixed
+    z-index: 100
+    overflow: hidden
+    &_logo
+        display: flex
+        position: absolute
+        width: 50px
+        height: 50px
+        top: 50px
+        right: 20px
+        user-select: none
+        z-index: 1000
+        &:hover
+            animation: shakeY 2s infinite
+    .container
+        display: flex
+        align-items: center
+    &_title
+        color: #fff
+        width: 100%
+        font-family: 'Mukta', sans-serif
+        font-size: 40px
+    &_text
+        color: #fff
+        font-size: 20px
+        width: 100%
+        line-height: 28px
+        &_link
+            margin-top: 50px
+.social
+    display: flex
+    position: fixed
+    justify-content: space-between
+    z-index: 1000
+    color: #fff
+    bottom: 10px
+    left: 40px
+    width: 120px
+    height: 50px
+    &_link
+        text-decoration: none
+        color: #fff
+        font-weight: 300
+.skills
+    display: flex
+    position: relative
+    width: 100%
+    height: 700px
+    z-index: 100
+    background-color: #171717
+    &_title
+        color: #fff
+        text-align: center
+        margin-top: 150px
+    &_grid
+        display: grid
+        grid-template-columns: repeat(7, 1fr)
+        grid-template-rows: repeat(2, 60px)
+        grid-gap: 30px
+        width: 70%
+        height: 300px
+        margin: 0 auto
+        margin-top: 100px
+        animation: fadeIn 2s
+        &_item
+            width: 50px
+            height: 50px
+            user-select: none
+            cursor: pointer
+            &_img
+                display: block
+                width: 50px
+                height: 50px
+.projects
+    display: flex
+    position: relative
+    width: 100%
+    height: 1700px
+    z-index: 100
+    background-color: #fff
+    &_title
+        display: inline-block
+        color: #171717
+        text-align: left
+        font-size: 40px
+        font-weight: 300
+    &_line
+        display: inline-block
+        width: 900px
+        height: 1px
+        background-color: #000000
+    &_grid
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(3, 400px)
+        grid-gap: 70px
+        margin-top: 100px
+        &_item
+            width: 650px
+            height: 450px
+            margin: 0 auto
+            &_border
+                border-radius: 44% 56% 86% 14% / 30% 14% 86% 70%
+                background-color: #060606
+            .swiper
+                width: 600px
+                height: 380px
+                cursor: grab
+            &_img
+                display: block
+                width: 600px
+                height: 380px
+                user-select: none
+                margin: 0 auto
+                transition: .7s
+            &_link_block
+                display: flex
+                justify-content: right
+                width: 100%
+            &_link
+                display: block
+                margin-top: 20px
+                color: #171717
+                font-size: 25px
+                font-weight: 300
+                text-align: right
+.slide_animated
+    animation: fadeInUp 2s
+
+.contacts
+    display: flex
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100vh
+    z-index: 10
+    align-items: center
+    justify-content: center
+    color: #fff
+    background-color: #171717
+    &_info
+        font-size: 28px
+        font-weight: 300
+    &_email
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 150px
+        height: 50px
+        border: solid 1px #fff
+        font-size: 25px
+        text-align: center
+        background: none
+        text-decoration: none
+        color: #fff
+        transition: .5s
+        &:hover
+            background-color: #fff
+            color: #171717
+
+
