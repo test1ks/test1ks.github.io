@@ -1,9 +1,9 @@
-.main_body {
+.body {
     background-color: #171717;
     z-index: 1;
     height: 4020px;
 }
-.main_header {
+.header {
     display: flex;
     position: fixed;
     top: 0;
@@ -14,7 +14,11 @@
     margin-top: 20px;
     z-index: 1000;
 }
-.main_header_nav {
+.slicknav_menu {
+    display: none;
+}
+
+.header_nav {
     width: 660px;
     height: 50px;
     background: rgba(56, 56, 56, 0.29);
@@ -23,7 +27,7 @@
     backdrop-filter: blur(12.8px);
     -webkit-backdrop-filter: blur(12.8px);
 }
-.main_header_nav_list {
+.header_nav_list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,15 +36,15 @@
     margin: 0 auto;
     padding: 0 10px 0 10px;
 }
-.main_header_nav_list_item {
+.header_nav_list_item {
     list-style: none;
 }
-.main_header_nav_list_item_link {
+.header_nav_list_item_link {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
 }
-.main_header_nav_list_item_link:hover {
+.header_nav_list_item_link:hover {
     border-bottom: solid 1px #fff;
 }
 .about {
@@ -245,25 +249,42 @@
     color: #171717;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-    .main_header_nav {
+    .header_nav {
         width: 95%;
+        display: none;
     }
-    .main_header_nav_list_item {
+    .slicknav_menu {
+        display: block;
+        width: 100%;
+        background: rgba(56, 56, 56, 0.29);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(12.8px);
+        -webkit-backdrop-filter: blur(12.8px);
+        position: fixed;
+        z-index: 10000;
+    }
+    .slicknav_btn {
+        background: none;
+        font-size: 20px;
+    }
+
+    .header_nav_list_item {
         list-style: none;
     }
-    .main_header_nav_list_item_link {
+    .header_nav_list_item_link {
         color: #fff;
         text-decoration: none;
         font-size: 16px;
     }
-    .main_header_nav_list_item_link:hover {
+    .header_nav_list_item_link:hover {
         border-bottom: solid 1px #fff;
     }
     .about {
         height: 700px;
+        padding-top: 10px;
     }
     .about_logo {
-        top: 20px;
+        top: 80px;
         left: 20px;
     }
     .social {
@@ -271,7 +292,6 @@
         justify-content: center;
         bottom: 0;
         left: 0;
-        
     }
     .social_link {
         font-size: 20px;
